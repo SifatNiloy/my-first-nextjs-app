@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles}>
+    <div>
       <h1>Hello next js</h1>
       <p>another text</p>
     </div>
