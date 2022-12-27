@@ -1,12 +1,17 @@
+import { useRouter } from "next/router";
 
 const PostDetails = ({post}) => {
+    const router= useRouter();
+    const handleBack=()=>{
+        router.push('/posts')
+    }
     return (
         <div className="card mx-10 my-10 bg-green-200 shadow-xl">
             <div className="card-body items-center text-center">
                 <h2>PostId: {post?.id}</h2>
                 <h2 className="card-title">{post?.title}</h2>
                 <p>{post?.body}</p>
-                
+                <button onClick={handleBack} className="btn btn-neutral">Back to all post </button>
             </div>
         </div>
     );
