@@ -20,7 +20,7 @@ export default function Home({posts}) {
       <Image src="/nature.jpg" width={600} height={400}></Image> */}
 
       <Banner></Banner>
-      <div>
+      <div className="text-center">
         {
           posts.map(post => <div key={post.id} className="card my-10 bg-blue-100 shadow-xl">
            
